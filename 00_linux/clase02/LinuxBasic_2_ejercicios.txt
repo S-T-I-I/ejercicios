@@ -1,0 +1,54 @@
+Ejercicios Linux Basic, Clase 2
+===================================
+
+1) Lista (en castellano) los 4 conceptos de la jerarquia de archivos en Linux.
+
+2) Cual es la diferencia entre los archivos almacenados en estos directorios: /bin y /usr/bin?
+
+3) Que usuario puede correr todos los comandos en /sbin o /usr/sbin, y porque?
+
+4) Que hay almacenado  en /boot, y funcion cumplen en Linux?
+
+5) Si tuvieran que cambiar alguna configuracion de sistema, por que directorio empezarian a buscar?
+
+6) Cual es el directorio que contiene archivos variables de sistema? Busca en internet mas informacion sobre el directorio /var, elegi 2 directorios y explica brevemente que contienen (ej: /var/log contiene los logs de sistema y de los distintos servicios).
+
+7) Que simbolo NO se puede usar como nombre de archivo/directorio en Linux? Que simbolos se recomienda no utilizar?
+
+8) Genere la siguiente estructura de directorios y archivos, dentro del directorio /tmp de su computadora. Utilice los comandos 'cd', 'mkdir' y 'touch', vistos en clase: por ejemplo, para generar el directorio 'myuser', ejecute 'mkdir /tmp/myuser'.
+
+	/tmp
+	├── myuser
+	│   ├── file1
+	│   └── file2
+	└── src
+	    ├── opt
+	    │   ├── file3
+	    │   └── file4
+	    ├── usr
+	    │   └── share
+	    │       └── dir1
+	    └── file5
+
+TIP: mire el help/man de mkdir, y busque la opcion '-p'. Use ese flag para generar los directorios mas rapido.
+
+9) Con la estructura del punto 8 generada, y estando parado en el CWD (Current Working Directory) indicado, responda a las siguientes consignas:
+	a - (CWD: /tmp/myuser) Comando para acceder al directorio 'tmp', utilizando un path relativo?
+	b - (CWD: /tmp/src/usr) Comando para acceder al directorio 'dir1', utilizando un path relativo?
+	c - (CWD: /tmp) Comando para copiar el 'file3' al directorio 'myuser', utilizando unicamente paths absolutos.
+	d - (CWD: /tmp/src/opt) Comando para mover el 'file4' dentro de 'dir1', usando solo path relativos.
+	e - (CWD: /) Copiar recursivamente el directorio 'myuser', dentro de 'share', usando path absolutos.
+	f - (CWD: /home/$USER) Cree un nuevo directorio 'MyPics' (dentro de 'myuser') con path absoluto.
+	g - (CWD: /home/$USER) Cree un nuevo directorio 'test' (dentro de 'tmp') con path relativo.
+	h - (CWD: /tmp/src/usr) Borre el directorio 'share', utilizando solo 'rmdir' y 'rm' (sin -r) con path relativos.
+	i - (CWD: /tmp) Use un solo comando 'rm' para borrar 'myuser' (con path absoluto) y 'src' (con path relativo). 
+
+BONUS: generen nuevamente la estructura del punto 8, y repitan el punto 9 usando solo la interface grafica, aprovechando los shortcuts estudiados.
+
+10) Usen el comando 'file' con un archivo de cada categoria, para ver que informacion les brinda esta utilidad: 
+	* audio: wav, mp3, ogg, etc
+	* video: avi, mkv, mp4, etc
+	* textos: txt, html
+	* imagen: gif, jpg, png, etc
+
+

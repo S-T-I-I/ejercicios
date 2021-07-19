@@ -1,0 +1,130 @@
+Ejercicios NOC Linux Basic, Clase 1
+===================================
+
+1) Nombra 2 personas que ayudaron a que Linux sea una realidad.
+
+Linus Torvalds
+
+Berkeley CSRG
+
+
+2) Lista las distribuciones que usamos en MELI, y busca al menos 5 mas.
+
+ubuntu
+redhat
+centos
+fedora
+debian
+kubuntu
+linux mint
+opensuse
+puppy linux
+knoppix
+mandriva
+slax
+
+
+
+3) Cuales son las 5 caracteristicas principales de linux? Describi brevemente el significado de cada una.
+
+Stability
+Security
+Hardware
+TCO
+Freedom
+
+---------------------------------------------------------------------------------
+Para las siguientes practicas, es necesario tener Linux corriendo en la maquina.
+Si aun no lo tienen instalado, pueden usar el siguiente link, para bajarse un programa que les permite grabar un 'Linux Live CD' en un pen drive.
+http://unetbootin.sourceforge.net/
+
+En el mismo link tienen listadas varias distribuciones. Una recomendable para empezar es Ubuntu, que se lo pueden bajar de aca:
+http://www.ubuntu.com/start-download?distro=desktop&bits=64&release=latest
+
+Si necesitan ayuda, write me.
+---------------------------------------------------------------------------------
+
+4) Booteen con su Linux. Que distribucion usan? Cuantas consolas virtuales tienen? Que combinacion de teclas les muestra la pantalla grafica?
+
+ubuntu 12.10 y 10.04
+
+6 consolas victuales
+
+crt +alt + f7
+
+
+5) Cambiando la clave de usuario... Configuren la clave para que sea '12345678'. Que mensaje reciben por pantalla? Ahora prueben con 'linux'. Les deja aplicar el cambio? Cambien la clave, usando una que el sistema acepte, y despues vuelvan a su clave original.
+
+si aplica el cambio
+passwd - para cambiar la pagina
+
+6) Que user id tienen? Cual es el group id primario al que estan asociados? A que otros grupos pertenecen?
+
+
+1000 usuario
+
+1000 grupo
+
+7) Elevando privilegios: Que comando tienen que utilizar? Accedan como root, y prueben de cambiarle la clave a alguna de las que probaron anteriormente. Que pasa ahora? Vuelvan a su clave original. Recuerden evitar usar las mismas claves, pero nunca se olviden de la clave de root!
+
+chmod
+
+no se pueden ejecutar, si se modificaron como root
+
+8) Como root, utilicen 'nano' para editar el archivo /etc/issue
+Agreguenle alguna frase, y guarden el archivo.
+Cambien a otra consola virtual, sin poner un user, apreten ENTER.
+Cambio el mensaje?
+
+si
+
+9) Vuelvan a la terminal con root, y busquen la pagina del man para el archivo /etc/issue. A que section del man pertenece?
+
+no entiendo que queres hacer
+
+10) Abran el man del comando getty. Busquen la siguiente frase 'ISSUE ESCAPES'. Agreguen al archivo /etc/issue los campos de fecha actual, la cantidad de usuarios en el sistema, y la version de sistema operativo.
+Prueben que los cambios se ven correctamente en otra terminal.
+
+si 
+
+11) Corran el comando 'pwd'. Que les devuelve? Miren con whatis que es lo que hace.
+
+el directorio donde estoy parado
+
+12) Cual es el uid de root? Ejecuten el comando 'exit', para salir de root y volver a su usuario. En que directorio estan parados ahora?
+
+uid=0
+
+13) Miren el help del comando 'ls'. Interpreten las distintas opciones que le pueden pasar al comando, y escriban el comando para lograr los siguientes listados:
+
+a- Listado simple del directorio /tmp
+
+ls -s /tmp
+
+b- Listado con todas las columnas de los archivos en /boot
+
+ls -l /boot
+
+c- Listen el contenido de /root. Que les devuelve? Porque?
+
+ls /root
+
+muestra
+
+Desktop  VirtualBox VMs
+
+d- Listado de su directorio actual, ordenado por tamaño.
+
+ls -lS
+
+e- Listado /tmp ordenado por tiempo, en orden reverso.
+
+ls -lt
+
+14) Usando alguno de los metodos que vieron de help, busquen informacion sobre como imprimir la fecha en el siguiente formato: 'YYYY-MM-DD'.
+
+date +%d-%m-%Y
+
+Si tienen dudas, las vemos en la clase.
+
+

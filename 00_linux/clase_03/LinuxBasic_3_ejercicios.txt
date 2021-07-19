@@ -1,0 +1,35 @@
+Ejercicios Linux Basic, Clase 3
+===================================
+
+1) Cual es la representacion simbolica (ej: rwxr-xr-x) de los siguientes permisos numericos?
+	a - 644:
+	b - 755:
+	c - 000:
+	d - 711:
+	e - 700:
+
+2) Cual es la representacion numerica de los siguientes permisos:
+	a - rwxrwxrwx:
+	b - r-xr-xr-x:
+	c - rwx-w--w-:
+	d - rw-------:
+	e - rwx-wx--x:
+
+3) Dados los siguientes permisos originales, que comandos tienen que correr para dejar los permisos finales?
+Para los que estan en notacion numerica, usen el comando con notacion numerica, y lo mismo para los que estan en representacion simbolica.
+	a - 700 -> 755:
+	b - rw-rw---- -> rw-rw-r--:
+	c - 555 -> 551:
+	d - rwxr-xr-x -> rwxrwxrwx:
+
+4) Supongamos que se bajaron un script de internet, que es seguro para ejecutar. De que manera convierten el archivo a script ejecutable para todos?
+
+5) Con que usuario/s podemos cambiar el owner de un archivo?
+
+6) Con que usuario/s podemos cambiar el grupo de un archivo?
+
+6) Como cambiarias el ownership (owner + grupo) del archivo 'myBeer', para que pertenezca a Homer del grupo Simpsons, utilizando: solo 'chown' y 'chown' junto con 'chgrp'?
+
+Si tienen dudas, las vemos juntos en clase.
+
+

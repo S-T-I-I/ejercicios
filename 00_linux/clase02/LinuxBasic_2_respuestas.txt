@@ -1,0 +1,115 @@
+Ejercicios NOC Linux Basic, Clase 2
+===================================
+
+1) Lista (en castellano) los 4 conceptos de la jerarquia de archivos en Linux.
+
+
+Files and directories are organized into a single-rooted inverted tree structure
+● Filesystem begins at the root directory, represented by a lone / (forward slash) character.
+● Names are case-sensitive
+● Paths are delimited by /
+
+2) Cual es la diferencia entre los archivos almacenados en estos directorios: /bin y /usr/bin?
+
+When UNIX was first written, /bin and /usr/bin physically resided on two different disks: /bin being on a smaller faster (more expensive) disk, and /usr/bin on a bigger slower disk. Now, /bin is a symbolic link to /usr/bin: they are essentially the same directory.
+
+
+3) Que usuario puede correr todos los comandos en /sbin o /usr/sbin, y porque?
+
+el root, porque tiene usuario 0, o permisos absolutos
+
+
+4) Que hay almacenado  en /boot, y funcion cumplen en Linux?
+
+Todos los archivos fundamentales para el arranque del sistema, aquí es donde se encuentra el programa Grub.
+
+
+5) Si tuvieran que cambiar alguna configuracion de sistema, por que directorio empezarian a buscar?
+
+
+/etc
+
+6) Cual es el directorio que contiene archivos variables de sistema? Busca en internet mas informacion sobre el directorio /var, elegi 2 directorios y explica brevemente que contienen (ej: /var/log contiene los logs de sistema y de los distintos servicios).
+
+ var contiene archivos con información variable. Ésto incluye archivos y /directorios en fila de ejecución, información de bitácora administrativa y /archivos temporales y transitorios.
+Algunas porciones de /var son no-compartibles entre diferentes sistemas. Por ejemplo, /var/log, /var/lock y /var/run. Otras porciones son compartibles, notablemente /var/spool/mail y /var/spool/news.
+
+var se especifica aquí para hacer posible el montar /usr sólo-lectura. /Todo aquello que alguna vez fué en /usr que es escrito durante la operación /normal del sistema (pero no durante la instalación y el mantenimiento del /software) debe ir en /var.
+
+
+7) Que simbolo NO se puede usar como nombre de archivo/directorio en Linux? Que simbolos se recomienda no utilizar?
+
+
+/ (raiz)
+
+8) Genere la siguiente estructura de directorios y archivos, dentro del directorio /tmp de su computadora. Utilice los comandos 'cd', 'mkdir' y 'touch', vistos en clase: por ejemplo, para generar el directorio 'myuser', ejecute 'mkdir /tmp/myuser'.
+
+	/tmp
+	├── myuser
+	│   ├── file1
+	│   └── file2
+	└── src
+	    ├── opt
+	    │   ├── file3
+	    │   └── file4
+	    ├── usr
+	    │   └── share
+	    │       └── dir1
+	    └── file5
+
+TIP: mire el help/man de mkdir, y busque la opcion '-p'. Use ese flag para generar los directorios mas rapido.
+
+9) Con la estructura del punto 8 generada, y estando parado en el CWD (Current Working Directory) indicado, responda a las siguientes consignas:
+
+a - (CWD: /tmp/myuser) Comando para acceder al directorio 'tmp', utilizando un path relativo?
+cd ..
+
+b - (CWD: /tmp/src/usr) Comando para acceder al directorio 'dir1', utilizando un path relativo?
+
+cd share/dir1
+
+	
+c - (CWD: /tmp) Comando para copiar el 'file3' al directorio 'myuser', utilizando unicamente paths absolutos.
+
+cp file3 /tmp/myuser
+
+d - (CWD: /tmp/src/opt) Comando para mover el 'file4' dentro de 'dir1', usando solo path relativos.
+
+mv file4 /temp/src/usr/share/dir1
+	
+e - (CWD: /) Copiar recursivamente el directorio 'myuser', dentro de 'share', usando path absolutos.
+
+cp -r /tmp/myuser/* /tmp/src/usr/share
+
+f - (CWD: /home/$USER) Cree un nuevo directorio 'MyPics' (dentro de 'myuser') con path absoluto.
+
+mkdir /temp/myuser/MyPics
+
+g - (CWD: /home/$USER) Cree un nuevo directorio 'test' (dentro de 'tmp') con path relativo.
+
+mkdir /temp/test
+
+h - (CWD: /tmp/src/usr) Borre el directorio 'share', utilizando solo 'rmdir' y 'rm' (sin -r) con path relativos.
+
+rmdir share/dir1
+
+ni idea como borar con rm un directorio sin r
+
+i - (CWD: /tmp) Use un solo comando 'rm' para borrar 'myuser' (con path absoluto) y 'src' (con path relativo). 
+
+idem anterior-ni idea
+
+
+BONUS: generen nuevamente la estructura del punto 8, y repitan el punto 9 usando solo la interface grafica, aprovechando los shortcuts estudiados.
+
+
+10) Usen el comando 'file' con un archivo de cada categoria, para ver que informacion les brinda esta utilidad: 
+	* audio: wav, mp3, ogg, etc
+	* video: avi, mkv, mp4, etc
+	* textos: txt, html
+	* imagen: gif, jpg, png, etc
+
+Si tienen dudas, las vemos juntos en clase.
+
+Exitos,
+Max
