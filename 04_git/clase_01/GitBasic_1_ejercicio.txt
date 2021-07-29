@@ -1,0 +1,37 @@
+Ejercicio
+
+1.- Crear un nuevo repo en git
+
+a.- primero creamos la carpeta a trabajar
+
+	mkdir ejercicio01
+
+	cd ejercicio01
+
+b.- inicializamos git
+
+	git init
+
+2.- creamos un archivo
+
+	touch test01
+
+3.- vemos el estado de las archivos en git
+
+	git status
+
+4.- Agregar un archivo al traqueo de git
+
+	git add test01
+
+5.- vemos el estado de las archivos en git
+
+	git status
+
+6.- Creamos un commit
+
+	git commit -m "Primera nota"
+
+7.- vemos el estado de las archivos en git
+
+	git status
