@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: <APPLICATIONNAME>
+  name: <APPLICATIONNAME>
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: <NODEPORTS>
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: <APPLICATIONNAME>
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}

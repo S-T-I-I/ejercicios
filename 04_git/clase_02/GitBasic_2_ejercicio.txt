@@ -1,0 +1,21 @@
+Ejercicio 2 A
+
+1.- Crear un repo
+2.- Clonar el repo anterior
+3.- Cargar 3 archivo aa.txt, bb.txt
+4.- Crear una nueva rama 
+5.- Moverse a la nueva rama
+6.- Generar un nuevo archivo en la nueva rama
+7.- Guardar todo y volver a la rama master
+
+Ejercicio 2 B
+
+1.- Crear un nuevo repo
+2.- Clonar el mismo
+3.- Generar un archivo readme, con los 4 items basico
+4.- Generar un LICENCE
+5.- Guardar todo y subirlo al repo remoto.
+
+Ejercicio 2 C
+1.- Generar un archivo .gitignore
+2.- Generar la excepcion para todos los arhicos Crecendiales.txt y otra para todos los archivos .doc

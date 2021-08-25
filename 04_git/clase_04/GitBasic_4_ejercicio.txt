@@ -1,0 +1,7 @@
+Ejercicio 4 A
+
+1.- Crear 2 repos remotos:
+a.- uno con un index.html de "hola mundo" 
+b.- otro repo con configuraciones de apache, solo se pide un archivo para configuar un virtualhost
+2.- Confiurar los repos necesarios el un servidor remoto para poder hacer un deploy automatico de el site html y de la configuracion de apache.
+3.- La consigna es armar el manual paso por paso para hacer esta tarea.

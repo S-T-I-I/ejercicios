@@ -1,0 +1,15 @@
+Ejercicio 3 A
+
+Ejercicio de a dos
+1.- Crear un repo
+2.- Clonarse el repo
+3.- El usuario A, debe crear el Archivo compartido y otros 2 archivos eleccion sin decirle al otro compañero, hacerles un commit y subirlos al repo.
+4.- El usuario B, debe crear 2 archivos a eleccion y subirlos al repo.
+5.- El usuario A, debe crear 2 archivos mas a eleccion y subirlos al repo
+6.- Entre los 2 ahora deben ver porque el usuario B, no puede subir sus cambio y como resolverlo.
+
+Ejercicio 3 B
+1.- Generar un nuevo repo
+2.- Clonar el repo
+3.- Generar un hook update que crear un archivo seguimiento.txt en su maquina
+ y cada vez que se vuelve a corre le agrega la final del archivo una linea con la fecha del ultima combio.
